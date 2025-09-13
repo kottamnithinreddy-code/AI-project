@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Wellness Platform</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define a custom font and dark background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Equivalent of bg-gray-900 */
+        }
+    </style>
+</head>
+<body class="bg-orange-900 text-white flex flex-col items-center p-4 sm:p-8">
+
+    <!-- Main Container -->
+    <div class="w-full max-w-4xl space-y-8">
+        
+        <!-- Header -->
+        <header class="text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-purple-400 mb-2">My Wellness Space</h1>
+            <p class="text-gray-400">Your personalized mental health platform.</p>
+        </header>
+
+        <!-- Daily Check-in Section -->
+        <section class="bg-gray-800 rounded-2xl shadow-lg p-6 sm:p-8">
+            <h2 class="text-3xl font-bold mb-4">Daily Check-in</h2>
+            <p class="text-gray-400 mb-4">How are you feeling today? Share your thoughts.</p>
+            <textarea
+                class="w-full p-4 rounded-lg bg-yellow-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors"
+                rows="4"
+                placeholder="Write about your day..."
+            ></textarea>
+            <button
+                class="mt-4 w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-xl shadow-lg transition-transform transform hover:scale-105 duration-300"
+            >
+                Submit Check-in
+            </button>
+            <p class="mt-4 text-center text-gray-500 text-sm">
+                *Note: This is a static visual representation. A real application would require JavaScript to save your entry.
+            </p>
+        </section>
+
+        <!-- Wellness Recommendations Section -->
+        <section class="bg-gray-800 rounded-2xl shadow-lg p-6 sm:p-8">
+            <h2 class="text-3xl font-bold mb-4">Personalized Recommendations</h2>
+            <ul class="space-y-3">
+                <!-- Static recommendations -->
+                <li class="bg-gray-700 p-4 rounded-lg flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-400 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9.09a3 3 0 014.18 0"></path>
+                        <path d="M14.65 14.65a5 5 0 01-7.3 0"></path>
+                    </svg>
+                    <span>Take a few minutes to practice deep breathing or meditation.</span>
+                </li>
+                <li class="bg-gray-700 p-4 rounded-lg flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-400 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9.09a3 3 0 014.18 0"></path>
+                        <path d="M14.65 14.65a5 5 0 01-7.3 0"></path>
+                    </svg>
+                    <span>Listen to your favorite music to shift your mood.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Mood Trend Visualization Section -->
+        <section class="bg-pink-800 rounded-2xl shadow-lg p-6 sm:p-8">
+            <h2 class="text-3xl font-bold mb-4">Your Mood Trends</h2>
+            <p class="text-gray-400 mb-4">A visual representation of your mood over time.</p>
+            <!-- Pure CSS Bar Chart (static representation) -->
+            <div class="flex items-end justify-between h-48 bg-pink-700 p-2 rounded-lg">
+                <div class="flex-1 flex flex-col items-center">
+                    <div style="height: 60%;" class="w-8 bg-yellow-500 rounded-t-full transition-all duration-500"></div>
+                    <span class="mt-2 text-xs text-gray-400">Day 1</span>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <div style="height: 85%;" class="w-8 bg-yellow-500 rounded-t-full transition-all duration-500"></div>
+                    <span class="mt-2 text-xs text-gray-400">Day 2</span>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <div style="height: 40%;" class="w-8 bg-yellow-500 rounded-t-full transition-all duration-500"></div>
+                    <span class="mt-2 text-xs text-gray-400">Day 3</span>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <div style="height: 70%;" class="w-8 bg-yellow-500 rounded-t-full transition-all duration-500"></div>
+                    <span class="mt-2 text-xs text-gray-400">Day 4</span>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <div style="height: 50%;" class="w-8 bg-yellow-500 rounded-t-full transition-all duration-500"></div>
+                    <span class="mt-2 text-xs text-gray-400">Day 5</span>
+                </div>
+            </div>
+            <p class="mt-4 text-center text-gray-500 text-sm">
+                *Note: This is a static visual representation. A real application would require JavaScript to dynamically update the chart.
+            </p>
+        </section>
+    </div>
+
+</body>
+</html>
